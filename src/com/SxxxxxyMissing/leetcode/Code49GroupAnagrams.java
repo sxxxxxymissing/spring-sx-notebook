@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
  */
 public class Code49GroupAnagrams {
 
-    //排序1
+    // 排序1
     public List<List<String>> groupAnagrams(String[] strs) {
         return new ArrayList<>(Arrays.stream(strs).collect(Collectors.groupingBy(str -> {
             char[] chars = str.toCharArray();
@@ -21,7 +21,7 @@ public class Code49GroupAnagrams {
         })).values());
     }
 
-    //排序2
+    // 排序2
     public List<List<String>> groupAnagrams1(String[] strs) {
         Map<String, List<String>> map = new HashMap<>();
         char[] chars;
@@ -37,7 +37,7 @@ public class Code49GroupAnagrams {
         return new ArrayList<>(map.values());
     }
 
-    //计数1
+    // 计数1
     public List<List<String>> groupAnagrams2(String[] strs) {
 
         Map<String, List<String>> map = new HashMap<>();
@@ -67,11 +67,11 @@ public class Code49GroupAnagrams {
         return new ArrayList<>(map.values());
     }
 
-    //质数
+    // 质数
     public List<List<String>> groupAnagrams3(String[] strs) {
         int[] prime = {
-                2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71,
-                73, 79, 83, 89, 97, 101};
+            2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101
+        };
         Map<Integer, List<String>> map = new HashMap<>();
         char[] chars;
         for (String str : strs) {
@@ -92,7 +92,7 @@ public class Code49GroupAnagrams {
         return new ArrayList<>(map.values());
     }
 
-    //计数2
+    // 计数2
     public List<List<String>> groupAnagrams4(String[] strs) {
         return new ArrayList<>(Arrays.stream(strs).collect(Collectors.groupingBy(str -> {
             char[] chars = str.toCharArray();
@@ -112,7 +112,7 @@ public class Code49GroupAnagrams {
 
     public static void main(String[] args) {
         String[] str = {
-                "abbbbbbbbbbb", "aaaaaaaaaaab"
+            "abbbbbbbbbbb", "aaaaaaaaaaab"
         };
         Code49GroupAnagrams groupAnagrams = new Code49GroupAnagrams();
         System.out.println(groupAnagrams.groupAnagrams(str));

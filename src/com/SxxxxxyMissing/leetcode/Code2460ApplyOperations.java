@@ -24,6 +24,7 @@ public class Code2460ApplyOperations {
         return nums;
     }
 
+    //替换位置
     public void swap(int[] nums, int i, int j) {
         int temp = nums[i];
         nums[i] = nums[j];

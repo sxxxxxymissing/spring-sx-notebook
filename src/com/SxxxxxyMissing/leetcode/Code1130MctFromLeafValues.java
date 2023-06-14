@@ -10,7 +10,7 @@ public class Code1130MctFromLeafValues {
     public int mctFromLeafValues(int[] arr) {
         Stack<Integer> st = new Stack<>();
         /** 作为栈底用当计算到栈底的时候, 如果没有栈底则会报错 */
-//        st.push(Integer.MAX_VALUE);
+        // st.push(Integer.MAX_VALUE);
         int mct = 0;
         for (int i = 0; i < arr.length; i++) {
             /** 如果arr[i] >= Stack中头部元素(不出栈) */

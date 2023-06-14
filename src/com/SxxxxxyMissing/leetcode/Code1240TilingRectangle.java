@@ -5,7 +5,7 @@ package com.SxxxxxyMissing.leetcode;
  */
 public class Code1240TilingRectangle {
 
-    //动态规划(抄的)
+    // 动态规划(抄的)
     public int tilingRectangle(int n, int m) {
         int[][] memo = new int[n + 1][m + 1];
         return dp(memo, n, m);
@@ -34,8 +34,8 @@ public class Code1240TilingRectangle {
             for (int a = 1; a < m && a < n; a++) {
                 for (int b = 1; b < m - a; b++) {
                     for (int c = 1; c < n - a; c++) {
-                        res = Math.min(res,
-                            1 + dp(memo, n - c, b) + dp(memo, c, b + a) + dp(memo, a + c, m - b - a) + dp(memo, n - c - a, m - b));
+                        res = Math.min(res, 1 + dp(memo, n - c, b) + dp(memo, c, b + a) + dp(memo, a + c, m - b - a)
+                            + dp(memo, n - c - a, m - b));
                     }
                 }
             }
@@ -50,7 +50,8 @@ public class Code1240TilingRectangle {
             squares += (n * m);
             if (n > m) {
                 n = n - m;
-            } else {
+            }
+            else {
                 m = m - n;
             }
         }
@@ -59,7 +60,7 @@ public class Code1240TilingRectangle {
 
     public static void main(String[] args) {
         Code1240TilingRectangle tilingRectangle = new Code1240TilingRectangle();
-        System.out.println(tilingRectangle.calculateMinimumSquares(2,3));
+        System.out.println(tilingRectangle.calculateMinimumSquares(2, 3));
     }
 
 }

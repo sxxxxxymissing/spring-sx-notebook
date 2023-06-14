@@ -23,6 +23,7 @@ public class Code2611MiceAndCheese {
         Arrays.sort(result);
         /** 计算根据最大差值对ans 更新 */
         for (int i = 1; i <= k; i++) {
+            //更新
             ans += result[result.length - i];
         }
         return ans;

@@ -1,6 +1,5 @@
 package com.SxxxxxyMissing.leetcode;
 
-
 /**
  * 02. 两数相加 (中等)
  */
@@ -26,22 +25,22 @@ public class Code02AddTwoNumbers {
         return head.next;
     }
 
-     public class ListNode {
-         int val;
-         ListNode next;
+    public class ListNode {
+        int val;
 
-         ListNode() {
-         }
+        ListNode next;
 
-         ListNode(int val) {
-             this.val = val;
-         }
+        ListNode() {
+        }
 
-         ListNode(int val, ListNode next) {
-             this.val = val;
-             this.next = next;
-         }
-     }
+        ListNode(int val) {
+            this.val = val;
+        }
 
+        ListNode(int val, ListNode next) {
+            this.val = val;
+            this.next = next;
+        }
+    }
 
 }

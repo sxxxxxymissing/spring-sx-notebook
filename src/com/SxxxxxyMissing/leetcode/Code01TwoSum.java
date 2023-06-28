@@ -14,12 +14,15 @@ public class Code01TwoSum {
         Map<Integer, Integer> map = new HashMap<>();
         int ans;
         for (int i = 0; i < nums.length; i++) {
+            // 获得差值
             ans = target - nums[i];
+            // 判断这个值是否存在
             if (map.containsKey(ans)) {
                 return new int[] {
                     map.get(ans), i
                 };
             }
+            // 将数组本身维护进map中
             map.put(nums[i], i);
         }
         return new int[] {};

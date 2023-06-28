@@ -6,6 +6,9 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
+/**
+ * 最长连续序列 (中等)
+ */
 public class Code128LongestConsecutive {
 
     // 排序

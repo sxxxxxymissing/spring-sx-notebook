@@ -1,4 +1,5 @@
-# algorithm
-algorithm exercise notes
-算法练习笔记
-目前只针对Leetcode
+## Sxxxxx open resouce
+# 一些记录
+# algorithm-lean - 算法记录
+
+#

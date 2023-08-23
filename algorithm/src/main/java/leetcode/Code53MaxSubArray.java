@@ -1,4 +1,4 @@
-package java.leetcode;
+package leetcode;
 
 public class Code53MaxSubArray {
 

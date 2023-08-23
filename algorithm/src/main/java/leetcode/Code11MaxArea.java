@@ -1,4 +1,4 @@
-package java.leetcode;
+package leetcode;
 
 /**
  * 盛最多水的容器 (中等)

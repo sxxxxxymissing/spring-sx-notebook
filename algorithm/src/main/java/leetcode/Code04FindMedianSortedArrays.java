@@ -1,4 +1,4 @@
-package java.leetcode;
+package leetcode;
 
 /**
  * 寻找两个正序数组的中位数 (困难)

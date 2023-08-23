@@ -1,4 +1,4 @@
-package java.leetcode;
+package leetcode;
 
 /**
  * 铺瓷砖 (困难)

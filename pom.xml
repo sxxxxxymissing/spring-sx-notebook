@@ -16,6 +16,7 @@
 
     <modules>
         <module>message-center</module>
+        <module>algorithm</module>
     </modules>
 
     <packaging>pom</packaging>

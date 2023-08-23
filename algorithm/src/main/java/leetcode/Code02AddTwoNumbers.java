@@ -1,4 +1,4 @@
-package java.leetcode;
+package leetcode;
 
 /**
  * 02. 两数相加 (中等)

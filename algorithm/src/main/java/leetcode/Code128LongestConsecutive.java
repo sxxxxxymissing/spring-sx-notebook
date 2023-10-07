@@ -47,7 +47,7 @@ public class Code128LongestConsecutive {
                 // 更新长度
                 int sum = right + left + 1;
                 ans = Math.max(ans, sum);
-                //这个其实随便
+                // 这个其实随便
                 map.put(num, sum);
                 // 更新边界长度
                 map.put(num - left, sum);

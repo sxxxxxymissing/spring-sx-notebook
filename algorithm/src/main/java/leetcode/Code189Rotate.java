@@ -47,16 +47,13 @@ public class Code189Rotate {
         return y > 0 ? gcd(y, x % y) : x;
     }
 
-
-
-
     public static void main(String[] args) {
         Code189Rotate rotate = new Code189Rotate();
         System.out.println(rotate.gcd(6, 2));
-//        int[] ints = {
-//            1, 2, 3, 4, 5, 6, 7
-//        };
-//        rotate.rotate(ints, 3);
-//        rotate.rotate1(ints, 3);
+        // int[] ints = {
+        // 1, 2, 3, 4, 5, 6, 7
+        // };
+        // rotate.rotate(ints, 3);
+        // rotate.rotate1(ints, 3);
     }
 }

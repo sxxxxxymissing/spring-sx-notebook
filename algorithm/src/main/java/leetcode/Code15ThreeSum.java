@@ -14,30 +14,34 @@ public class Code15ThreeSum {
             if (nums[i] > 0) {
                 break;
             }
-            //对 i 去重
+            // 对 i 去重
             if (i > 0 && nums[i] == nums[i - 1]) {
                 continue;
             }
-            //确定2个指针
+            // 确定2个指针
             int left = i + 1;
             int right = nums.length - 1;
             while (left < right) {
-                //得到和
+                // 得到和
                 int sum = nums[i] + nums[right] + nums[left];
-                //移动左指针、同时去重
+                // 移动左指针、同时去重
                 if (sum > 0) {
-                    while (left < right && nums[right] == nums[--right]);
+                    while (left < right && nums[right] == nums[--right])
+                        ;
                 }
-                //移动右指针、同时去重
+                // 移动右指针、同时去重
                 else if (sum < 0) {
-                    while (left < right && nums[left] == nums[++left]);
+                    while (left < right && nums[left] == nums[++left])
+                        ;
                 }
                 else {
-                    //为0则获得答案
+                    // 为0则获得答案
                     result.add(new ArrayList<>(Arrays.asList(nums[i], nums[right], nums[left])));
-                    //移动指针到下一个数字， 同时去重
-                    while (left < right && nums[right] == nums[--right]);
-                    while (left < right && nums[left] == nums[++left]);
+                    // 移动指针到下一个数字， 同时去重
+                    while (left < right && nums[right] == nums[--right])
+                        ;
+                    while (left < right && nums[left] == nums[++left])
+                        ;
                 }
             }
         }

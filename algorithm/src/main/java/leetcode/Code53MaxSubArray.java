@@ -2,7 +2,7 @@ package leetcode;
 
 public class Code53MaxSubArray {
 
-    //暴力枚举～
+    // 暴力枚举～
     public int maxSubArray(int[] nums) {
         if (nums.length == 1) {
             return nums[0];
@@ -21,7 +21,7 @@ public class Code53MaxSubArray {
         return res;
     }
 
-    //动态规划 dp
+    // 动态规划 dp
     public int maxSubArray1(int[] nums) {
         int pre = 0, sum = nums[0];
         for (int i = 0; i < nums.length; i++) {
@@ -35,12 +35,11 @@ public class Code53MaxSubArray {
         return sum;
     }
 
-
     public static void main(String[] args) {
         Code53MaxSubArray maxSubArray = new Code53MaxSubArray();
         int[] ints = {
-             -2, 1, -3, 4, -1, 2, 1, -5, 4
-//            -2, -1
+            -2, 1, -3, 4, -1, 2, 1, -5, 4
+            // -2, -1
         };
         System.out.println(maxSubArray.maxSubArray(ints));
         System.out.println(maxSubArray.maxSubArray1(ints));

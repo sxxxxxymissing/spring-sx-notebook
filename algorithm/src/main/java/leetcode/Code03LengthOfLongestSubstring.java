@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class Code03LengthOfLongestSubstring {
 
-    //动态滑窗 map 版
+    // 动态滑窗 map 版
     public int lengthOfLongestSubstring(String s) {
         int ans = 0;
         Map<Character, Integer> map = new HashMap<>();
@@ -22,7 +22,7 @@ public class Code03LengthOfLongestSubstring {
         return ans;
     }
 
-    //动态滑窗 数组版
+    // 动态滑窗 数组版
     public int lengthOfLongestSubstring1(String s) {
         int ans = 0, start = 0;
         int[] ints = new int[127];
@@ -33,7 +33,7 @@ public class Code03LengthOfLongestSubstring {
             }
             // 获取最大值
             ans = Math.max(ans, i - start + 1);
-            //指向上一次出现的位置并指向下一位
+            // 指向上一次出现的位置并指向下一位
             ints[alpha] = i + 1;
         }
         return ans;

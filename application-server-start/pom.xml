@@ -9,11 +9,30 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>algorithm</artifactId>
+    <artifactId>application-server-start</artifactId>
+    <groupId>com.sxxxxx.server.start</groupId>
+    <version>1.0-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- 消息中心 -->
+<!--        <dependency>-->
+<!--            <groupId>com.iwhalecloud.oss.idp</groupId>-->
+<!--            <artifactId>message-center</artifactId>-->
+<!--            <version>${sxxxx.version}</version>-->
+<!--        </dependency>-->
+
+    </dependencies>
+
 
 </project>

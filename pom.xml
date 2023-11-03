@@ -16,7 +16,7 @@
 
     <modules>
         <module>message-center</module>
-        <module>algorithm</module>
+        <module>application-server-start</module>
     </modules>
 
     <packaging>pom</packaging>
@@ -26,6 +26,7 @@
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
+        <sxxxx.version>1.0-SNAPSHOT</sxxxx.version>
     </properties>
 
     <dependencies>

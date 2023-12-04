@@ -25,12 +25,19 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <!-- 数据库驱动 -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql-connector.version}</version>
+        </dependency>
+
         <!-- 消息中心 -->
-<!--        <dependency>-->
-<!--            <groupId>com.iwhalecloud.oss.idp</groupId>-->
-<!--            <artifactId>message-center</artifactId>-->
-<!--            <version>${sxxxx.version}</version>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>com.sxxxxx.server.core</groupId>
+            <artifactId>message-center</artifactId>
+            <version>${sxxxx.version}</version>
+        </dependency>
 
     </dependencies>
 

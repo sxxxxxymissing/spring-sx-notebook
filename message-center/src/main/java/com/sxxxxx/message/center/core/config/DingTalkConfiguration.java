@@ -4,6 +4,9 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
 import lombok.Data;
+import org.springframework.util.Base64Utils;
+
+import java.nio.charset.StandardCharsets;
 
 @Data
 public class DingTalkConfiguration implements MessageConfiguration {
@@ -16,4 +19,10 @@ public class DingTalkConfiguration implements MessageConfiguration {
 
     @NotNull(message = "agentId, 不可为空")
     private Long agentId;
+
+    @Override
+    public void decryptBase64() {
+        accessKeyId = new String(Base64Utils.decode(accessKeyId.getBytes(StandardCharsets.UTF_8)), StandardCharsets.UTF_8);
+        accessKeySecret = new String(Base64Utils.decode(accessKeySecret.getBytes(StandardCharsets.UTF_8)), StandardCharsets.UTF_8);
+    }
 }

@@ -1,7 +1,7 @@
 # Sxxxxx open resouce
 ##### 一些学习使用记录
 
-### [algorithm-lean - 算法记录] (https://github.com/sxxxxxymissing/spring-sx-notebook/tree/master/algorithm-learn)
+### [algorithm-lean - 算法记录] (https://github.com/sxxxxxymissing/algorithm)
 ##### 记录了算法学习记录
 
 ### [message - 消息中心] (https://github.com/sxxxxxymissing/spring-sx-notebook/tree/master/message-center)

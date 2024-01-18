@@ -19,15 +19,20 @@ public class MessageService {
     private EmailConfig emailConfig;
 
     public void sendEmail(String title, String body, String link) {
+        List<EmailAndPhoneConf> emails = initializationEmail();
+        MessageContext messageContext = new MessageContext(title, body, link,
+                link, "type", false, new UserConfiguration(null, null, null, emails));
+
+        MessageCenterFactory messageCenterFactory = new MessageCenterFactory();
+        messageCenterFactory.setType(MessageTypeEnum.EMAIL).setConfiguration(emailConfig, messageContext);
+        messageCenterFactory.build().sendMessage();
+    }
+
+    private List<EmailAndPhoneConf> initializationEmail() {
         List<EmailAndPhoneConf> emails = new ArrayList<>();
         EmailAndPhoneConf email = new EmailAndPhoneConf();
         email.setEmail("xxxxxx.com");
         emails.add(email);
-        UserConfiguration userConfiguration = new UserConfiguration(null, null, null, emails);
-        MessageContext messageContext = new MessageContext(title, body, link,
-                link, "type", false, userConfiguration);
-        MessageCenterFactory messageCenterFactory = new MessageCenterFactory();
-        messageCenterFactory.setType(MessageTypeEnum.EMAIL).setConfiguration(emailConfig, messageContext);
-        messageCenterFactory.build().sendMessage();
+        return emails;
     }
 }
